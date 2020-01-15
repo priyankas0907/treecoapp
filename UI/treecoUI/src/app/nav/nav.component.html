@@ -1,25 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-lignt .navbar-inner">
+  <a class="navbar-brand" href="#">
+    <img src="./assets/treeCologo.jpg" alt="" width="50%" height="100%">
+  </a>
+  <button class="navbar-toggler"  type="button"
+          (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon" ></span> 
+    
+  </button>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" [routerLink]="['/home']">TreeCo</a>
- 
 
-  
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
     <ul class="navbar-nav mr-auto">
       <li routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/home']" >  Home</a>
+        <a class="nav-link navtext" [routerLink]="['/home'] " ><span class="fa fa-fw fa-home"></span>HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/about']">About</a>
+        <a class="nav-link navtext" [routerLink]="['/about']">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/blog']">Blog</a>
+        <a class="nav-link navtext" [routerLink]="['/blog']">BLOG</a>
       </li>
-     
+      <li class="nav-item">
+        <a class="nav-link navtext" [routerLink]="['/career']">CAREER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navtext" [routerLink]="['/contact']">CONTACT</a>
+      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Username" aria-label="UserName">
-      <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password">
-      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
- 
+  </div>
 </nav>
