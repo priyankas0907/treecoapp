@@ -12,4 +12,4 @@ export const appRoutes: Routes = [
     {path: 'blog', component: BlogComponent},
     {path: 'career', component: CareerComponent},
     {path: '**', redirectTo : 'home', pathMatch: 'full'}
-]
+];
