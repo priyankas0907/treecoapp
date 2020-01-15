@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
@@ -13,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import {appRoutes} from './routes';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import {AccordianComponent } from './about/accordian/accordian.component';
 
 @NgModule({
    declarations: [
@@ -24,12 +27,15 @@ import { FooterComponent } from './footer/footer.component';
       CareerComponent,
       ContactComponent,
       BlogComponent,
-      FooterComponent
+      FooterComponent,
+      CarouselComponent,
+      AccordianComponent
    ],
    imports: [
       BrowserModule,
       HttpClientModule,
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
+      NgbModule
    ],
    providers: [],
    bootstrap: [

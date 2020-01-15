@@ -1,0 +1,54 @@
+<ngb-accordion #a="ngbAccordion" activeIds="custom-panel-1">
+  <ngb-panel id="custom-panel-1">
+    <ng-template ngbPanelHeader let-opened="opened" >
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">About Us {{ opened ? 'opened' : 'collapsed' }}</h5>
+        <button ngbPanelToggle class="btn btn-link p-0"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Treeco India with its headquarters in Bengaluru, is a company that specializes in providing end to end solutions in renewable energy including Investment and EPC services for rooftop as well as ground mounted solar photovoltaic (PV) systems, biogas plants and wind energy systems across India with focus on Industrial & Commercial segment.   
+
+      Specialized in these business fields and with a belief in absolute reliability, top quality and the long-term success of renewable energies, we and our team of managers, engineers and designers are looking to set new standards in the energy industry. We collaborate with the community of partners, contributing our global engineering and consultancy experience, striving for cost leadership in value chain, focusing on bettering end customer’s value.   
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelHeader>
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">A Step Ahead</h5>
+        <div>
+          <button ngbPanelToggle class="btn btn-link ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelHeader>
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">Satisfaction  Guaranteed</h5>
+        
+        <div>
+          <button ngbPanelToggle class="btn btn-link ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </ng-template>
+    
+    <ng-template ngbPanelContent>
+      
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
