@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { CareerComponent } from './career/career.component';
+import { ValueComponent } from './value/value.component';
 
 export const appRoutes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -11,5 +12,6 @@ export const appRoutes: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'career', component: CareerComponent},
+    {path: 'value', component: ValueComponent},
     {path: '**', redirectTo : 'home', pathMatch: 'full'}
 ];

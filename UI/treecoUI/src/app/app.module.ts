@@ -12,6 +12,7 @@ import { CareerComponent } from './career/career.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import {appRoutes} from './routes';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
    declarations: [
@@ -22,7 +23,8 @@ import {appRoutes} from './routes';
       AboutComponent,
       CareerComponent,
       ContactComponent,
-      BlogComponent
+      BlogComponent,
+      FooterComponent
    ],
    imports: [
       BrowserModule,
